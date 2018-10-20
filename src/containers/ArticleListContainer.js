@@ -1,24 +1,9 @@
-import React, {Component} from react;
-import Article from './Article.js/';
+import React, {Component} from 'react';
 
-const ArticleList (props) => {
-
-
-  const newsUser =
-  props.newsUser.map (newsUser) => {
-    return(
-      <li key={newsUser.id} className="component-item">
-        <ArticleList newsUser={newsUser} />
-      </li>
-    )
-  }
-
+const ArticleListContainer = (props) => {
   return (
-    <ol className="component-list">
-      {newsUser}
-    </ol>
+    <div className="articles">
+      article
+    </div>
   )
-
 }
-
-export default ArticleListContainer.js;

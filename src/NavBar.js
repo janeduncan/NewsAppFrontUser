@@ -1,12 +1,24 @@
 import React from 'react';
-import React { Link } 'react-router-dom';
+import {Link} from 'react-router-dom';
+
 const NavBar = (props) => {
   return (
     <header>
-      <ul>
-        <li className="navLink"></li>
-        <Link></Link>
-      </ul>
+
+        <ul className="navBar">
+          <li className="navLink">
+            <Link to="">Home</Link>
+          </li>
+          <li className="navLink">
+            <Link to="">User</Link>
+          </li>
+          <li className="navLink">
+            <Link to="">Article</Link>
+          </li>
+        </ul>
+
     </header>
   )
 }
+
+export default NavBar;
