@@ -1,13 +1,23 @@
 import React, {Component} from 'react';
+import ArticleListContainer from './ArticleListContainer.js';
 
+class NewsUserContainer extends Component {
 
-const NewsUserContainer = (props) => {
+  constructor(props) {
+    super(props)
+    this.state = {
+      articles: [
+      ]
+    }
+  }
 
-  return (
-      <div className="user-container">
-        <h1 className="">Users</h1>
+  render(){
+    return (
+      <div className="newsUser-container">
+          <ArticleListContainer articles={this.state.articles} />
       </div>
-  )
+    )
+  }
 }
 
 export default NewsUserContainer;

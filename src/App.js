@@ -13,9 +13,9 @@ class App extends Component {
           <React.Fragment>
             <NavBar/>
               <Switch>
-                <Route/>
-                <Route/>
-                <Route/>
+                <Route exact path="/home" component ={NewsUserContainer} />
+                <Route exact path="/user" component ={NewsUserContainer}/>
+                <Route exact path="/Article" component ={ArticleListContainer}/>
               </Switch>
           </React.Fragment>
       </Router>
