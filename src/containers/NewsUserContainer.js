@@ -22,7 +22,7 @@ class NewsUserContainer extends Component {
 
   render(){
     return (
-      <div className="newsUser-container">
+      <div className="newsusercontainer">
         {/* {console.log(this.state.articles)}  */}
           <ArticleListContainer articles={this.state.articles} />
       </div>

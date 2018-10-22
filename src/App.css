@@ -11,3 +11,25 @@ a {
   color: black;
   text-decoration: none;
 }
+
+.articles-container{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.article-container-item{
+  width: 200px;
+  margin: 10px;
+  grid-row-start: 1;
+  background-color: #ebebeb;
+  padding-bottom: 15px;
+  color: #2e2e2e;
+}
+
+.article-link{
+  text-align: right;
+}
