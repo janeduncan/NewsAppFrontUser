@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
 import Article from '../components/Article.js'
+import ArticleSingleView from '../components/ArticleSingleView.js'
 
 const ArticleListContainer = (props) => {
 
 // fetch articles and store in state with component did mount in here
 
   const displayArticles = props.articles.map((article, index) => {
-    return ( <div key={index} className = "list">
-      <Article article={article}/>
-    </div>
-    )
-  })
-
+    return (
+        <div key={index} className = "list">
+          <Article article={article}/>
+        </div>
+      )
+    })
     if (props.articles){
       return (
         <div className="articles-container">
@@ -19,12 +20,7 @@ const ArticleListContainer = (props) => {
         </div>
       )
     }
-
     return null;
-
   }
-
-
-
 
 export default ArticleListContainer;
