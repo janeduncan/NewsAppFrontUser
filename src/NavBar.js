@@ -9,12 +9,10 @@ const NavBar = (props) => {
           <li className="navLink">
             <Link to="">Home</Link>
           </li>
-          <li className="navLink">
-            <Link to="">User</Link>
-          </li>
-          <li className="navLink">
+
+          {/* <li className="navLink">
             <Link to="">Article</Link>
-          </li>
+          </li> */}
         </ul>
 
     </header>
