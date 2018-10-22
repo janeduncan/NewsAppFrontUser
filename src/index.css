@@ -6,9 +6,93 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 1px;
+  /* background-color: #AFEEEE; */
+  background-image: url("future_news.jpeg");
+  background-position: center center;
+     background-repeat:  no-repeat;
+     background-attachment: fixed;
+     background-size:  cover;
+  color:white;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* .background-color{
+  background-color: #AFEEEE;
+} */
+
+li {
+  font-family: 'Merriweather', serif;
+  font-size: 1.1em;
+  line-height: 2;
+  display: inline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #708090;
+}
+
+a:visited {
+    color: #191970;
+}
+
+a:hover {
+    background-color: #FFD700;
+    font-weight: bold;
+    font-size: 2;
+    color:purple;
+}
+
+li.button1{
+ background-color:#32CD32;
+ border:1px solid black;
+ border-radius:2px;
+ color:#fff;
+ margin-right:2px;
+ padding:10px 10px 10px 10px;
+}
+
+li.button2{
+ background-color:#00FA9A;
+ border:1px solid black;
+ border-radius:2px;
+ color:#fff;
+ margin-right:2px;
+ padding:10px 10px 10px 10px;
+}
+
+li.button3{
+ background-color:#7CFC00;
+ border:1px solid black;
+ border-radius:2px;
+ color:#fff;
+ margin-right:2px;
+ padding:10px 10px 10px 10px;
+}
+
+Link {
+
+}
+
+h1   {
+  font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h3 {
+  font-family: 'Merriweather', serif;
 }
