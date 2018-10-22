@@ -1,16 +1,30 @@
 import React, {Component} from 'react';
+import Article from '../components/Article.js'
 
 const ArticleListContainer = (props) => {
 
-  console.log(props.articles);
-  return (
-    <div className="articles-container">
-      <h3 className="heading">heading</h3>
-        <div>
-          <p>hello article</p>
-        </div>
+// fetch articles and store in state with component did mount in here
+
+  const displayArticles = props.articles.map((article, index) => {
+    return ( <div key={index} className = "list">
+      <Article article={article}/>
     </div>
-  )
-}
+    )
+  })
+
+    if (props.articles){
+      return (
+        <div className="articles-container">
+          {displayArticles}
+        </div>
+      )
+    }
+
+    return null;
+
+  }
+
+
+
 
 export default ArticleListContainer;
