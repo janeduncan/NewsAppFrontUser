@@ -34,3 +34,17 @@
     transform: rotate(360deg);
   }
 }
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li{
+  display: inline;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
