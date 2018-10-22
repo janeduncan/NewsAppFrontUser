@@ -3,8 +3,8 @@ import moment from 'moment';
 
 const ArticleSingleView = (props) => {
 
-  const date = new Date(props.article.date);
-  const formattedDate = moment(date).format("DD/MM/YYYY HH:mm");
+  let date = new Date(props.article.date);
+  let formattedDate = moment(date).format("DD/MM/YYYY HH:mm");
 
   return (
     <div>
