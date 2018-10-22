@@ -10,7 +10,6 @@ class NewsUserContainer extends Component {
       articles: []
     }
   }
-
   // fetch articles and store in state with component did mount in here
   componentDidMount(){
     // console.log("articles");
@@ -24,13 +23,11 @@ class NewsUserContainer extends Component {
   render(){
     return (
       <div className="newsUser-container">
-        {console.log(this.state.articles)}
+        {/* {console.log(this.state.articles)}  */}
           <ArticleListContainer articles={this.state.articles} />
       </div>
     )
   }
-
-
 }
 
 export default NewsUserContainer;
