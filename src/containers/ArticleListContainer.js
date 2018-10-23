@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Article from '../components/Article.js'
-import ArticleSingleView from '../components/ArticleSingleView.js'
+
 
 const ArticleListContainer = (props) => {
 

@@ -1,3 +1,12 @@
+.banner {
+  height: 150px;
+  background-color: #ffffff;
+  background-image: url('/images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 600px 74px;
+  background-position: center;
+}
+
 nav ul{
   display: flex;
   justify-content: space-around;
@@ -22,7 +31,7 @@ a {
 }
 
 .article-container-item{
-  width: 200px;
+  width: 320px;
   margin: 10px;
   grid-row-start: 1;
   background-color: #ebebeb;

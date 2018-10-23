@@ -10,12 +10,12 @@ const Article = (props) => {
 
   return (
     <div className="article-container-item">
-      <img src={props.article.image} width="200px"/>
+      <img src={props.article.image} width="320px"/>
       <p>{formattedDate}</p>
       <p>{props.article.journalist.name}</p>
       <p>{props.article.title}</p>
       <p>{props.article.summary}</p>
-      <div className="article-link"><a href={url}>View</a></div>
+      <div className="article-link"><a href={url}>Continue reading></a></div>
       <p></p>
     </div>
   )

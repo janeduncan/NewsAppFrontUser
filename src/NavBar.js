@@ -5,6 +5,7 @@ const NavBar = (props) => {
   return (
     <header>
       <nav>
+        <div className="banner"></div>
         <ul className="navBar">
           <li className="navLink"><Link to=".">UK</Link></li>
           <li className="navLink"><Link to=".">World</Link></li>

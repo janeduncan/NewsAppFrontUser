@@ -1,10 +1,9 @@
 import React from 'react'
 
-const ArticleIndivdual = (props) => {
-
+const ArticleIndividual = (props) => {
   return (
-    <div><p>{props.article.title}</p></div>
+    <div><p>{props.data.title}</p></div>
   )
 }
 
-export default ArticleIndivdual;
+export default ArticleIndividual;

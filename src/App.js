@@ -3,10 +3,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import NavBar from './NavBar.js';
 import NewsUserContainer from './containers/NewsUserContainer.js';
 import ArticleDetails from './components/ArticleDetails.js';
-
-
 import './App.css';
-
 
 class App extends Component {
   render() {
