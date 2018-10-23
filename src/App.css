@@ -7,6 +7,15 @@
   background-position: center;
 }
 
+.article-individual {
+  margin: auto;
+  background-color: hotpink;
+}
+
+footer {
+  text-align: center;
+}
+
 nav ul{
   display: flex;
   justify-content: space-around;
