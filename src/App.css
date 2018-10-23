@@ -1,5 +1,5 @@
 .banner {
-  height: 150px;
+  height: 120px;
   background-color: #ffffff;
   background-image: url('/images/logo.jpg');
   background-repeat: no-repeat;
@@ -7,18 +7,46 @@
   background-position: center;
 }
 
+.search {
+  height: 50px;
+  background-color: #ffffff;
+  background-image: url('/images/search.jpg');
+  background-repeat: no-repeat;
+  background-size: 141px 30px;
+  background-position: right;
+  margin-right: 35px;
+}
+
+.date {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
 .article-individual {
+  width: 650px;
   margin: auto;
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   background-color: hotpink;
+}
+
+.jobtitle {
+  color: #107d77;
+  display: inline;
 }
 
 footer {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 nav ul{
   display: flex;
   justify-content: space-around;
+  font-weight: bold;
+  font-weight: serif;
+  font-size: 1.2em;
 }
 
 ul li{
@@ -31,19 +59,20 @@ a {
 }
 
 .articles-container{
-  width: 80%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   background-color: white;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 
 .article-container-item{
-  width: 320px;
+  width: 370px;
   margin: 10px;
+  padding: 6px;
   grid-row-start: 1;
-  background-color: #ebebeb;
   padding-bottom: 15px;
   color: #2e2e2e;
 }
