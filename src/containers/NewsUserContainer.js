@@ -9,6 +9,8 @@ class NewsUserContainer extends Component {
     this.state = {
       articles: []
     }
+
+    this.handleSearch = this.handleSearch.bind(this);
   }
   // fetch articles and store in state with component did mount in here
   componentDidMount(){
@@ -16,19 +18,39 @@ class NewsUserContainer extends Component {
     fetch('/articles')
     .then((res) => res.json ())
     .then((data) => {
-      console.log(data);
-      this.setState({articles: data._embedded.articles})
+      this.setState({articles: data})
+
     })
   }
 
-  render(){
-    console.log(this.state);
-    return (
-      <div className="newsusercontainer">
+  handleSearch(event){
+      const newArticles = this.state.articles.filter(article => {
+        console.log('article', article);
+        console.log(event.target.value);
+        console.log(article.title.includes(event.target.value));
+        return article.title.includes(event.target.value)
+      })
+      // console.log('newARticles', newArticles);
+
+      this.setState({ articles: newArticles})
+    }
+
+    render(){
+      // console.log('newsusercontainer', this.state);
+      console.log(this.state);
+      return (
+        <div className="newsusercontainer">
+          {/* {console.log(this.state.articles)}  */}
+          <input type="text" placeholder="Search..."  id="searchbox" onChange={this.handleSearch}
+            // onChange={this.class.location.reload(false)}
+
+            >
+
+          </input>
           <ArticleListContainer articles={this.state.articles} />
-      </div>
-    )
+        </div>
+      )
+    }
   }
-}
 
 export default NewsUserContainer;

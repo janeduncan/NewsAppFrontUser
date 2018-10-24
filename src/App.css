@@ -1,62 +1,3 @@
-.banner {
-  height: 100px;
-  background-color: #ffffff;
-  background-image: url('/images/logo.jpg');
-  background-repeat: no-repeat;
-  background-size: 600px 65px;
-  background-position: center;
-}
-
-.search {
-  height: 50px;
-  background-color: #ffffff;
-  background-image: url('/images/search.jpg');
-  background-repeat: no-repeat;
-  background-size: 141px 30px;
-  background-position: right;
-  margin-right: 35px;
-}
-
-.date {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.article-individual {
-  width: 650px;
-  margin: auto;
-  padding: 16px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.article-individual-date {
-  color: #107d77;
-}
-
-.jobtitle {
-  color: #107d77;
-  display: inline;
-  font-weight: bold;
-}
-
-footer {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-nav ul{
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-  font-weight: serif;
-  font-size: 1.2em;
-}
-
-ul li{
-  display: inline;
-}
-
 a {
   color: black;
   text-decoration: none;
@@ -81,7 +22,114 @@ a {
   color: #2e2e2e;
 }
 
+.article-individual {
+  width: 650px;
+  margin: auto;
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article-individual-date {
+  color: #107d77;
+}
+
 .article-link{
   text-align: right;
   font-weight: bold;
+}
+
+.banner {
+  height: 100px;
+  background-color: #ffffff;
+  background-image: url('/images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 600px 65px;
+  background-position: center;
+}
+
+body{
+  background-color: white;
+  font-family: 'Roboto Slab', serif;
+    /* background-image: url("https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  background-position: center center;
+     background-repeat:  no-repeat;
+     background-attachment: fixed;
+     background-size:  cover; */
+}
+
+.date {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input#searchbox {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 2;
+  border:1px solid black;
+  font-color: #708090;
+  margin-left: 50px;
+  height: 40px;
+  width: 248px;
+}
+
+input#searchbox:hover {
+  background-color: #FAF0E6;
+}
+
+.jobtitle {
+  color: #107d77;
+  display: inline;
+  font-weight: bold;
+}
+
+li.button{
+ /* background-color:#808080; */
+ border-right:1px solid black;
+ /* border-radius:2px; */
+ color:black;
+ margin-right:2px;
+ padding:10px 10px 10px 10px;
+ height: 20px;
+ width: 104px;
+ text-align: center;
+}
+
+li:visited {
+    color: #191970;
+}
+
+li:hover {
+    background-color: #FAF0E6;
+    font-weight: bold;
+    font-size: 2;
+    color:black;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-weight: serif;
+  font-size: 1.2em;
+}
+
+/* .search {
+  height: 50px;
+  background-color: #ffffff;
+  background-image: url('/images/search.jpg');
+  background-repeat: no-repeat;
+  background-size: 141px 30px;
+  background-position: right;
+  margin-right: 35px;
+} */
+
+ul li{
+  display: inline;
 }
