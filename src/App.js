@@ -15,7 +15,11 @@ class App extends Component {
               <Switch>
                 <Route exact path="/home" component ={NewsUserContainer} />
                 <Route exact path="/articles/:id" render = {(props) => {
-                  const url = "/articles/" + props.match.params.id
+                  const url = "/articles/" + props.match.params.id;
+                  return <ArticleDetails url={url} />
+                }}/>
+                <Route exact path="/articles/category/:category" render = {(props) => {
+                  const url = props.match.url
                   return <ArticleDetails url={url} />
                 }}/>
               </Switch>

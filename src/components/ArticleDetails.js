@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ArticleIndividual from './ArticleIndividual';
+import Article from './Article';
 
 class ArticleDetails extends Component {
 
@@ -20,6 +21,13 @@ class ArticleDetails extends Component {
  }
 
  render() {
+   if (this.state.articles.length > 1){
+     const articles = this.state.articles.map(article => {
+       return <Article article={article}/>
+     })
+     return articles
+   }
+   console.log('rendering ad', this.state);
    return (
      <ArticleIndividual data={this.state.articles}/>
    )
