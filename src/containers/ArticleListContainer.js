@@ -8,7 +8,7 @@ const ArticleListContainer = (props) => {
   if(!props.articles){
     return null;
   }
-  console.log(props.articles);
+  // console.log(props.articles);
   const displayArticles = props.articles.map((article, index) => {
     return (
         <div key={index} className = "list">
