@@ -17,7 +17,7 @@ class NewsUserContainer extends Component {
     .then((res) => res.json ())
     .then((data) => {
       console.log(data);
-      this.setState({articles: data})
+      this.setState({articles: data._embedded.articles})
     })
   }
 
