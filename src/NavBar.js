@@ -13,7 +13,6 @@ const NavBar = (props) => {
   return (
     <header>
       <nav>
-        <div className="search"></div>
         <div className="banner"></div>
         <div className="date">{date}</div>
         <ul className="navBar">

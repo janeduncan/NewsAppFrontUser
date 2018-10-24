@@ -14,7 +14,7 @@ const Article = (props) => {
       <p>by {props.article.journalist.name} <div className="jobtitle">{props.article.journalist.jobTitle}</div></p>
       <img src={props.article.image} width="370px"/>
       <p>{props.article.summary}</p>
-      <div className="article-link"><a href={url}>Continue reading >></a></div>
+      <div className="article-link"><a href={url}>Continue reading ></a></div>
       <p></p>
     </div>
   )
