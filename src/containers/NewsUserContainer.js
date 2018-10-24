@@ -7,7 +7,8 @@ class NewsUserContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      articles: []
+      articles: [],
+      searchText: ""
     }
 
     this.handleSearch = this.handleSearch.bind(this);
@@ -23,33 +24,26 @@ class NewsUserContainer extends Component {
   }
 
   handleSearch(event){
-      const newArticles = this.state.articles.filter(article => {
-        console.log('article', article);
-        console.log(event.target.value);
-        console.log(article.title.includes(event.target.value));
-        return article.title.includes(event.target.value)
-      })
-      // console.log('newARticles', newArticles);
-
-      this.setState({ articles: newArticles})
-    }
-
-    render(){
-      // console.log('newsusercontainer', this.state);
-      console.log(this.state);
-      return (
-        <div className="newsusercontainer">
-          {/* {console.log(this.state.articles)}  */}
-          <input type="text" placeholder="Search..."  id="searchbox" onChange={this.handleSearch}
-            // onChange={this.class.location.reload(false)}
-
-            >
-
-          </input>
-          <ArticleListContainer articles={this.state.articles} />
-        </div>
-      )
-    }
+    this.setState({ searchText: event.target.value})
   }
+
+  render(){
+    let { searchText } = this.state;
+    // console.log('newsusercontainer', this.state);
+    const articlesToShow = this.state.articles.filter(article => {
+      return article.title.toLowerCase().includes(searchText.toLowerCase())
+    })
+
+    return (
+      <div className="newsusercontainer">
+        {/* {console.log(this.state.articles)}  */}
+        <input type="text" placeholder="Search..."  id="searchbox" onChange={this.handleSearch}>
+
+        </input>
+        <ArticleListContainer articles={articlesToShow} />
+      </div>
+    )
+  }
+}
 
 export default NewsUserContainer;
