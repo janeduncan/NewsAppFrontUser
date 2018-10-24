@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 const Article = (props) => {
-
+  console.log('a', props);
   let date = new Date(props.article.date);
   let formattedDate = moment(date).format("DD/MM/YYYY HH:mm");
 

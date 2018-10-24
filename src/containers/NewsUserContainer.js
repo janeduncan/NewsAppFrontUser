@@ -16,14 +16,15 @@ class NewsUserContainer extends Component {
     fetch('/articles')
     .then((res) => res.json ())
     .then((data) => {
-      this.setState({articles: data._embedded.articles})
+      console.log(data);
+      this.setState({articles: data})
     })
   }
 
   render(){
+    console.log(this.state);
     return (
       <div className="newsusercontainer">
-        {/* {console.log(this.state.articles)}  */}
           <ArticleListContainer articles={this.state.articles} />
       </div>
     )

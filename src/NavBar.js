@@ -6,6 +6,10 @@ const NavBar = (props) => {
 
   let date = moment().format('Do MMMM YYYY');
 
+  const handleClick = (category) => {
+    window.location = "/articles/category/" + category;
+  }
+
   return (
     <header>
       <nav>
@@ -14,15 +18,15 @@ const NavBar = (props) => {
         <div className="date">{date}</div>
         <ul className="navBar">
           <li className="navLink"><Link to="/home">Home</Link></li>
-          <li className="navLink"><Link to=".">UK</Link></li>
-          <li className="navLink"><Link to=".">World</Link></li>
-          <li className="navLink"><Link to=".">Politics</Link></li>
-          <li className="navLink"><Link to=".">Tech</Link></li>
-          <li className="navLink"><Link to=".">Business</Link></li>
-          <li className="navLink"><Link to=".">Education</Link></li>
-          <li className="navLink"><Link to=".">Environment</Link></li>
-          <li className="navLink"><Link to=".">Sport</Link></li>
-          <li className="navLink"><Link to=".">Celebrity</Link></li>
+          <li className="navLink" onClick={() => {handleClick("uk")}}>UK</li>
+          <li className="navLink" onClick={() => {handleClick("world")}}>World</li>
+          <li className="navLink" onClick={() => {handleClick("politics")}}>Politics</li>
+          <li className="navLink" onClick={() => {handleClick("tech")}}>Tech</li>
+          <li className="navLink" onClick={() => {handleClick("business")}}>Business</li>
+          <li className="navLink" onClick={() => {handleClick("education")}}>Education</li>
+          <li className="navLink" onClick={() => {handleClick("environment")}}>Environment</li>
+          <li className="navLink" onClick={() => {handleClick("sports")}}>Sport</li>
+          <li className="navLink" onClick={() => {handleClick("celebrity")}}>Celebrity</li>
         </ul>
       </nav>
     </header>
