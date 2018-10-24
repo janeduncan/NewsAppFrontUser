@@ -1,32 +1,135 @@
-.App {
-  text-align: center;
+a {
+  color: black;
+  text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.articles-container{
+  width: 90%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  background-color: white;
+  margin: auto;
+  margin-top: 30px;
+  margin-right: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.article-container-item{
+  width: 370px;
+  margin: 10px;
+  padding: 6px;
+  grid-row-start: 1;
+  padding-bottom: 15px;
+  color: #2e2e2e;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article-individual {
+  width: 650px;
+  margin: auto;
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.article-individual-date {
+  color: #107d77;
+}
+
+.article-link{
+  text-align: right;
+  font-weight: bold;
+}
+
+.banner {
+  height: 100px;
+  background-color: #ffffff;
+  background-image: url('/images/logo.jpg');
+  background-repeat: no-repeat;
+  background-size: 600px 65px;
+  background-position: center;
+}
+
+body{
+  background-color: white;
+  font-family: 'Roboto Slab', serif;
+    /* background-image: url("https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350");
+  background-position: center center;
+     background-repeat:  no-repeat;
+     background-attachment: fixed;
+     background-size:  cover; */
+}
+
+.date {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+input#searchbox {
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 2;
+  border:1px solid black;
+  font-color: #708090;
+  margin-left: 50px;
+  height: 40px;
+  width: 248px;
+}
+
+input#searchbox:hover {
+  background-color: #FAF0E6;
+}
+
+.jobtitle {
+  color: #107d77;
+  display: inline;
+  font-weight: bold;
+}
+
+li.button{
+ /* background-color:#808080; */
+ border-right:1px solid black;
+ /* border-radius:2px; */
+ color:black;
+ margin-right:2px;
+ padding:10px 10px 10px 10px;
+ height: 20px;
+ width: 104px;
+ text-align: center;
+}
+
+li:visited {
+    color: #191970;
+}
+
+li:hover {
+    background-color: #FAF0E6;
+    font-weight: bold;
+    font-size: 2;
+    color:black;
+}
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold;
+  font-weight: serif;
+  font-size: 1.2em;
+}
+
+/* .search {
+  height: 50px;
+  background-color: #ffffff;
+  background-image: url('/images/search.jpg');
+  background-repeat: no-repeat;
+  background-size: 141px 30px;
+  background-position: right;
+  margin-right: 35px;
+} */
+
+ul li{
+  display: inline;
 }
