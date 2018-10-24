@@ -18,8 +18,7 @@ class NewsUserContainer extends Component {
     fetch('/articles')
     .then((res) => res.json ())
     .then((data) => {
-      this.setState({articles: data})
-
+      this.setState({articles: data._embedded.articles})
     })
   }
 
