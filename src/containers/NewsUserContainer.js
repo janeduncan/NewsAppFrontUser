@@ -19,6 +19,7 @@ class NewsUserContainer extends Component {
     .then((res) => res.json ())
     .then((data) => {
       this.setState({articles: data})
+
     })
   }
 
@@ -28,7 +29,6 @@ class NewsUserContainer extends Component {
         console.log(event.target.value);
         console.log(article.title.includes(event.target.value));
         return article.title.includes(event.target.value)
-        // === event.target.values
       })
       // console.log('newARticles', newArticles);
 

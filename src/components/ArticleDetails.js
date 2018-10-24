@@ -17,6 +17,7 @@ class ArticleDetails extends Component {
    .then((res) => res.json())
    .then((data) => {
      this.setState({articles: data})
+     console.log(this.state.articles);
    })
  }
 
